@@ -10,7 +10,7 @@
 }
 .ms_row {
     overflow-y: auto;
-    height: 50vh;
+    height: 370px;
 }
 .ms_text_decoration  {
     font-size: 1.5rem;
@@ -31,4 +31,48 @@
 .ms_bg_color_div {
     height: 100%;
     background: linear-gradient(90deg, rgba(0, 255, 76, 0) 0%, rgb(90, 250, 255) 33%, rgb(255, 136, 0) 100%);
+}
+.ms_hover {
+    top: 0%;
+    left: 0%;
+    height: 100%;
+    overflow: hidden;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.ms_hover_right {
+    top: 0%;
+    right: 0%;
+    height: 100%;
+    overflow: hidden;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+}
+.ms_img_1 {
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: scale(0);
+}
+.ms_img_2 {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: scale(1);
+}
+.ms_button_div {
+    height: 100%;
+    overflow-y: auto;
+}
+.ms_hover:hover .ms_img_2 {
+    transform: scale(0) rotate(360deg);
+    transition: all 1s ease-in-out;
+    opacity: 1;    
+}
+.ms_hover:hover .ms_img_1 {
+    transform: scale(1) rotate(-360deg);
+    transition: all 1s ease-in;
+    opacity: 1;
 }

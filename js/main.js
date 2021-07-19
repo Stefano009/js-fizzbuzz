@@ -30,8 +30,6 @@ for (var i = 0; i < iterationNumber; i++) {
         console.log( i + 1);
         numberFizzBuzz.push(i + 1);
     }
-    numbers.innerHTML += "<p class='py-2'>" + numberFizzBuzz[i] + "</p>"
-    buttons
-    .innerHTML += "<p class='ms_button_decoration'>" + numberFizzBuzz[i] + "</p><br>"
+    buttons.innerHTML += "<p class='ms_button_decoration'>" + numberFizzBuzz[i] + "</p><br>"
 }
 console.log(numberFizzBuzz);
